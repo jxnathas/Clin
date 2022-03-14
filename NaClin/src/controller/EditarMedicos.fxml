@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditarMedicosController">
+   <children>
+      <Label layoutX="7.0" prefHeight="39.0" prefWidth="89.0" text="NaClin">
+         <font>
+            <Font name="Tahoma Bold" size="25.0" />
+         </font>
+      </Label>
+      <Circle fill="DODGERBLUE" layoutX="94.0" layoutY="13.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Separator layoutX="17.0" layoutY="36.0" prefHeight="0.0" prefWidth="48.0" />
+      <Label layoutX="230.0" layoutY="38.0" text="EDITAR MÉDICO">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="309.0" layoutY="123.0" text="NOME:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="154.0" text="CRM:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="302.0" layoutY="184.0" text="SENHA:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#Voltar" text="Voltar" />
+      <ListView fx:id="medicoListView" layoutX="63.0" layoutY="75.0" prefHeight="246.0" prefWidth="200.0" />
+      <Button layoutX="63.0" layoutY="328.0" mnemonicParsing="false" onAction="#CarregarList" text="Carregar" />
+      <Button layoutX="422.0" layoutY="240.0" mnemonicParsing="false" onAction="#Editar" text="Confirmar" />
+      <TextField fx:id="textFieldNome" layoutX="349.0" layoutY="119.0" prefHeight="25.0" prefWidth="203.0" />
+      <TextField fx:id="textFieldCrm" layoutX="349.0" layoutY="150.0" prefHeight="25.0" prefWidth="203.0" />
+      <Button layoutX="199.0" layoutY="328.0" mnemonicParsing="false" onAction="#Remover" text="Remover" />
+      <Label fx:id="infoArea" layoutX="349.0" layoutY="332.0" prefHeight="17.0" prefWidth="214.0" textAlignment="CENTER" />
+      <PasswordField fx:id="senha" layoutX="349.0" layoutY="182.0" prefHeight="25.0" prefWidth="203.0" />
+   </children>
+</AnchorPane>

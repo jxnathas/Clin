@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditarPacientesController">
+   <children>
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#Voltar" text="Voltar" />
+      <Circle fill="DODGERBLUE" layoutX="94.0" layoutY="13.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Separator layoutX="17.0" layoutY="36.0" prefHeight="0.0" prefWidth="48.0" />
+      <Label layoutX="7.0" prefHeight="39.0" prefWidth="89.0" text="NaClin">
+         <font>
+            <Font name="Tahoma Bold" size="25.0" />
+         </font>
+      </Label>
+      <ListView fx:id="pacientesListView" layoutX="63.0" layoutY="75.0" prefHeight="246.0" prefWidth="200.0" />
+      <Button layoutX="63.0" layoutY="328.0" mnemonicParsing="false" onAction="#CarregarList" text="Carregar" />
+      <Button layoutX="422.0" layoutY="200.0" mnemonicParsing="false" onAction="#editar" text="Confirmar" />
+      <TextField fx:id="textFieldNome" layoutX="354.0" layoutY="127.0" prefHeight="25.0" prefWidth="203.0" />
+      <Label layoutX="223.0" layoutY="39.0" text="EDITAR PACIENTE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="309.0" layoutY="131.0" text="NOME:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="199.0" layoutY="328.0" mnemonicParsing="false" onAction="#remover" text="Remover" />
+      <Label fx:id="infoArea" layoutX="349.0" layoutY="332.0" prefHeight="17.0" prefWidth="214.0" textAlignment="CENTER" />
+      <TextField fx:id="textFieldCpf" layoutX="354.0" layoutY="158.0" prefHeight="25.0" prefWidth="203.0" />
+      <Label layoutX="324.0" layoutY="162.0" text="CPF:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

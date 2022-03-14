@@ -1,0 +1,68 @@
+import java.util.ArrayList;
+
+/*******************************************************************************
+Autor: Jonathas Santos e Santos
+Componente Curricular: Algoritmos II
+Concluido em: 30/08/2021
+Declaro que este código foi elaborado por mim de forma individual e não contém nenhum
+trecho de código de outro colega ou de outro autor, tais como provindos de livros e
+apostilas, e páginas ou documentos eletrônicos da Internet. Qualquer trecho de código
+de outra autoria que não a minha está destacado com uma citação para o autor e a fonte
+do código, e estou ciente que estes trechos não serão considerados para fins de avaliação.
+******************************************************************************************/
+
+public class Medico {
+    private String nome;
+    private String crm;
+    private Especialidade especialidade[] = new Especialidade[2];
+    private String senha;
+    private ArrayList<Consulta> consultas;
+
+    public Medico (String nome, String crm, String senha){
+        this.nome = nome;
+        this.crm = crm;
+        this.senha = senha;
+    }
+    
+    public ArrayList<Consulta> getConsultas() {
+        return consultas;
+    }
+
+    public void setConsultas(ArrayList<Consulta> consultas) {
+        this.consultas = consultas;
+    }
+
+    public Especialidade[] getEspecialidade() {
+        return especialidade;
+    }
+
+    public void setEspecialidade(Especialidade especialidade[]) {
+        this.especialidade = especialidade;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public String getCrm() {
+        return crm;
+    }
+    public void setCrm(String crm) {
+        this.crm = crm;
+    }
+    @Override
+	public String toString() {
+		return getNome();
+	}
+}

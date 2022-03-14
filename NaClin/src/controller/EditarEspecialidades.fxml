@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditarEspecialidadesController">
+   <children>
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#Voltar" text="Voltar" />
+      <Circle fill="DODGERBLUE" layoutX="95.0" layoutY="13.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Separator layoutX="18.0" layoutY="36.0" prefHeight="0.0" prefWidth="48.0" />
+      <Label layoutX="8.0" prefHeight="39.0" prefWidth="89.0" text="NaClin">
+         <font>
+            <Font name="Tahoma Bold" size="25.0" />
+         </font>
+      </Label>
+      <ListView fx:id="especialidadesListView" layoutX="53.0" layoutY="65.0" prefHeight="246.0" prefWidth="200.0" />
+      <Button layoutX="53.0" layoutY="318.0" mnemonicParsing="false" onAction="#CarregarList" text="Carregar" />
+      <Button layoutX="411.0" layoutY="200.0" mnemonicParsing="false" onAction="#editar" text="Confirmar" />
+      <TextField fx:id="textField" layoutX="344.0" layoutY="156.0" prefHeight="25.0" prefWidth="203.0" />
+      <Label layoutX="199.0" layoutY="36.0" text="EDITAR ESPECIALIDADE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="160.0" text="NOME:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="189.0" layoutY="318.0" mnemonicParsing="false" onAction="#remover" text="Remover" />
+      <Label fx:id="infoArea" layoutX="339.0" layoutY="322.0" prefHeight="17.0" prefWidth="214.0" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
