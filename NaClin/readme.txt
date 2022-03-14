@@ -1,2 +1,1 @@
-Projetinho desenvolvido no vscode porquê o netbeans, eclipse e inteliJ pararam de funcionar.
-É só baixar a extensão do java e javaFX no vscode e adicionar a biblioteca do javaFX nas dependecias do projeto
+Esse é um projeto que utilizei para aprender javaFX e simular o funcionamento de um software de clinica medica e marcação de consultas
